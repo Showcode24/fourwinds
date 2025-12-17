@@ -8,9 +8,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "DOCKERS' CLUB - Premium Cocktail Experience",
+  title: "FOURWINDS | GRILL HOUSE | SPORTS | THE CLUB - Premium Cocktail Experience",
   description: "Calm, cozy waterfront bar with premium drinks and exclusive membership",
-  generator: "v0.app",
+  generator: "byte technologies",
   icons: {
     icon: [
       {

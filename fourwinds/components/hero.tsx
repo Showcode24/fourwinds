@@ -23,14 +23,14 @@ export default function Hero({ section }: { section: Section }) {
 
   const sectionConfig = {
     office: {
-      title: "DOCKERS' OFFICE",
+      title: "THE OFFICE",
       gradient: "from-amber-200 to-amber-500",
       buttonBg: "bg-amber-500 hover:bg-amber-400",
       accentColor: "text-amber-500",
-      tagline: "Calm | Cozy | Water front view",
+      tagline: "Calm | Cozy | Warm",
     },
     club: {
-      title: "DOCKERS' CLUB",
+      title: "THE CLUB",
       gradient: "from-amber-200 to-amber-500",
       buttonBg: "bg-amber-500 hover:bg-amber-400",
       accentColor: "text-amber-500",
@@ -56,9 +56,9 @@ export default function Hero({ section }: { section: Section }) {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6"
         >
-          <div className="w-20 h-20 mx-auto mb-4">
-            <Image src="/images/dockers-logo.jpg" alt="DOCKERS' CLUB Logo" width={100} height={100} />
-          </div>
+          {/* <div className="w-20 h-20 mx-auto mb-4">
+            <Image src="/images/fourwinds logo.png" alt="FOURWINDS | GRILL HOUSE | SPORTS | THE CLUB Logo" width={100} height={100} />
+          </div> */}
         </motion.div>
 
         <motion.h1

@@ -7,7 +7,7 @@ import { Settings } from "lucide-react"
 const tourSteps: Step[] = [
   {
     target: "body",
-    content: "Welcome to DOCKERS' CLUB! Let's take a quick tour to help you get started.",
+    content: "Welcome to FOURWINDS | GRILL HOUSE | SPORTS | THE CLUB! Let's take a quick tour to help you get started.",
     placement: "center",
     disableBeacon: true,
   },

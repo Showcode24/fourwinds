@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, Search } from "lucide-react"
 import type { DrinkCategory } from "@/lib/types"
 import { drinks } from "@/lib/data"
+import Image from "next/image"
 
 interface MobileNavProps {
   categories: DrinkCategory[]
@@ -49,30 +50,41 @@ export default function MobileNav({
           isScrolled ? "bg-black/90 backdrop-blur-md shadow-md" : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-xl font-bold text-amber-500">
-              DOCKERS' CLUB
-            </motion.h1>
+<div className="container mx-auto px-4 sm:px-6">
+  <div className="flex flex-col sm:flex-row items-center justify-between py-3 sm:py-0 sm:h-16 gap-2 sm:gap-4">
+    <motion.h1 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      className="text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-xl font-bold text-amber-500 text-center sm:text-left whitespace-nowrap order-1 sm:order-1"
+    >
+      FOURWINDS | GRILL HOUSE | SPORTS | THE CLUB
+    </motion.h1>
 
-            <div className="flex items-center space-x-3">
-              <button
-                onClick={onOpenSearch}
-                className="search-bar p-2 text-zinc-400 hover:text-amber-500 transition-colors"
-                aria-label="Search"
-              >
-                <Search size={20} />
-              </button>
-              <button
-                onClick={() => setIsMenuOpen(true)}
-                className="p-2 text-zinc-400 hover:text-amber-500 transition-colors"
-                aria-label="Open menu"
-              >
-                <Menu size={24} />
-              </button>
-            </div>
-          </div>
-        </div>
+    <div className="flex items-center space-x-3 sm:space-x-4 flex-shrink-0 order-2 sm:order-2">
+      <Image 
+        src="/images/fourwinds logo.png" 
+        alt="FOURWINDS | GRILL HOUSE | SPORTS | THE CLUB Logo" 
+        width={250} 
+        height={250}
+        className="w-24 h-24 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 object-contain"
+      />
+      <button
+        onClick={onOpenSearch}
+        className="search-bar p-2 text-zinc-400 hover:text-amber-500 transition-colors"
+        aria-label="Search"
+      >
+        <Search className="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+      </button>
+      <button
+        onClick={() => setIsMenuOpen(true)}
+        className="p-2 text-zinc-400 hover:text-amber-500 transition-colors"
+        aria-label="Open menu"
+      >
+        <Menu className="w-6 h-6 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+      </button>
+    </div>
+  </div>
+</div>
       </header>
 
       <div

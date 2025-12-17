@@ -16,7 +16,7 @@ export default function Footer() {
           transition={{ duration: 0.6 }}
           className="flex flex-col items-center text-center mb-8"
         >
-          <h2 className="text-2xl font-bold text-amber-500 mb-2">DOCKERS' CLUB</h2>
+          <h2 className="text-2xl font-bold text-amber-500 mb-2">FOURWINDS | GRILL HOUSE | SPORTS | THE CLUB</h2>
           <p className="text-zinc-400">Premium Cocktail Experience</p>
         </motion.div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-center mb-8"
         >
-          <p className="text-zinc-300 mb-1">Ahmadu Bello way, Victoria Island, Lagos</p>
+          <p className="text-zinc-300 mb-1">10A Adetokunbo Ademola Street, Victoria Island, Lagos</p>
           <p className="text-zinc-400 mb-2">Open 6PM - 2AM</p>
         </motion.div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center text-zinc-500 text-sm border-t border-zinc-900 pt-8"
         >
-          <p>© {new Date().getFullYear()} DOCKERS' CLUB. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} FOURWINDS | GRILL HOUSE | SPORTS | THE CLUB. All rights reserved.</p>
           <p className="mt-2 text-xs">Please drink responsibly.</p>
         </motion.div>
       </div>
